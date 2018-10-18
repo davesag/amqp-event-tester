@@ -6,12 +6,12 @@ A simpleAMQP event listener that can be configured to listen for your event emit
 
 | Branch | Tests | Code Coverage | Comments |
 | ------ | ----- | ------------- | ---------|
-| `develop` | [] | [] | Latest Staging Release |
-| `master` | [] | [] | Latest Production Release |
+| `develop` | [![CircleCI](https://circleci.com/gh/davesag/amqp-event-tester/tree/develop.svg?style=svg)](https://circleci.com/gh/davesag/amqp-event-tester/tree/develop) | [![codecov](https://codecov.io/gh/davesag/amqp-event-tester/branch/develop/graph/badge.svg)](https://codecov.io/gh/davesag/amqp-event-tester) | Latest Staging Release |
+| `master` | [![CircleCI](https://circleci.com/gh/davesag/amqp-event-tester/tree/master.svg?style=svg)](https://circleci.com/gh/davesag/amqp-event-tester/tree/master) | [![codecov](https://codecov.io/gh/davesag/amqp-event-tester/branch/master/graph/badge.svg)](https://codecov.io/gh/davesag/amqp-event-tester) | Latest Production Release |
 
 ## Docker Image
 
-* [`davesag/amqp-event-tester`](https://hub.docker.com/r/davesag/mock-sign-in-with-slack/)
+* [`davesag/amqp-event-tester`](https://hub.docker.com/r/davesag/amqp-event-tester/)
 
 ## Configuration
 
