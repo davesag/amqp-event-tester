@@ -1,7 +1,7 @@
 FROM node:10-alpine
 MAINTAINER david.sag@industrie.co
 
-WORKDIR /InformationDisorderProject/services/facebook-source-manager
+WORKDIR /amqp-event-tester
 
 COPY package.json package.json
 COPY package-lock.json package-lock.json
