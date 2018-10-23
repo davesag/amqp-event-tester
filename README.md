@@ -39,7 +39,8 @@ Where `xxx` is a Base64 encoded JSON in the form:
 {
   [eventKey]: {
     queue: 'Queue to listen on',
-    response: 'event to respond with'
+    response: 'event to respond with',
+    data: { some: 'data to respond with' }
   },
   ...
 }
