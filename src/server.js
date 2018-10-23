@@ -54,7 +54,7 @@ const doShutdown = () => {
 
 const start = async () => {
   try {
-    service = makePublisher({ exchange, AMQP_URL })
+    service = makePublisher({ exchange, url: AMQP_URL })
     await service.start()
 
     logger.debug('Service connected', exchange)

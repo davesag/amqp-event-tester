@@ -5,7 +5,7 @@ const { AMQP_URL } = require('src/utils/config')
 
 const genericSubscriber = (queueName, routingKeys, makeHandler) => {
   const makeService = () =>
-    makeSubscriber({ exchange, queueName, routingKeys, AMQP_URL })
+    makeSubscriber({ exchange, queueName, routingKeys, url: AMQP_URL })
 
   const start = async name => {
     const service = makeService()
