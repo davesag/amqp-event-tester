@@ -48,7 +48,7 @@ Where `xxx` is a Base64 encoded JSON in the form:
 #### Example
 
 ```
-EVENTS=eyJyZWdpc3RlciI6eyJxdWV1ZSI6IlJFR0lTVFJBVElPTiIsInJlc3BvbnNlIjoicmVnaXN0ZXJlZCJ9LCJkaXNtaXNzIjp7InF1ZXVlIjoiRElTTUlTU0FMIiwicmVzcG9uc2UiOiJkaXNtaXNzZWQifX0=
+EVENTS=eyJyZWdpc3RlciI6eyJxdWV1ZSI6IlJFR0lTVFJBVElPTiIsInJlc3BvbnNlIjoicmVnaXN0ZXJlZCIsImRhdGEiOnsidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIn19LCJkaXNtaXNzIjp7InF1ZXVlIjoiRElTTUlTU0FMIiwicmVzcG9uc2UiOiJkaXNtaXNzZWQiLCJkYXRhIjp7InN1Y2Nlc3MiOnRydWV9fX0=
 ```
 
 Decodes to
@@ -57,19 +57,23 @@ Decodes to
 {
   register: {
     queue: 'REGISTRATION',
-    response: 'registered'
+    response: 'registered',
+    data: {
+      url: 'http://localhost:9090'
+    }
   },
   dismiss: {
     queue: 'DISMISSAL',
-    response: 'dismissed'
+    response: 'dismissed',
+    data: { success: true }
   }
 }
 ```
 
 This tells the event tester to
 
-* listen for `register` on queue `REGISTRATION` and, when it hears it, respond with key `registered`, and
-* listen for `dismiss` on queue `DISMISSAL` and, when it hears it, respond with key `dismissed`
+* listen for `register` on queue `REGISTRATION` and, when it hears it, respond with key `registered` and data `{ url: 'http://localhost:9090' }`, and
+* listen for `dismiss` on queue `DISMISSAL` and, when it hears it, respond with key `dismissed`, and data `{ success: true }`
 
 ## Development
 

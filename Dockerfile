@@ -10,5 +10,4 @@ RUN npm install
 COPY src src
 COPY index.js index.js
 
-EXPOSE 3000
 ENTRYPOINT ["npm" , "start" ]

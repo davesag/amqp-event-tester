@@ -2,6 +2,8 @@ const { expect } = require('chai')
 const { stub, restore } = require('sinon')
 const proxyquire = require('proxyquire')
 
+const mockLogger = require('test/utils/mockLogger')
+
 describe('src/stores/listeners', () => {
   const fakeListener = {
     close: stub(),
@@ -14,7 +16,8 @@ describe('src/stores/listeners', () => {
     EVENTS: {
       [key]: {
         queue: 'test-queue',
-        response: 'test-response'
+        response: 'test-response',
+        data: { test: 'data' }
       }
     }
   }
@@ -22,7 +25,8 @@ describe('src/stores/listeners', () => {
 
   const listenerStore = proxyquire('src/stores/listeners', {
     'src/utils/config': fakeConfig,
-    'src/utils/genericSubscriber': mockGenericSubscriber
+    'src/utils/genericSubscriber': mockGenericSubscriber,
+    'src/utils/logger': mockLogger
   })
 
   describe('startAll', () => {
