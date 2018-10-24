@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:10
 MAINTAINER davesag@gmail.com
 
 WORKDIR /amqp-event-tester
@@ -9,5 +9,6 @@ RUN npm install
 
 COPY src src
 COPY index.js index.js
+COPY start.sh start.sh
 
-ENTRYPOINT ["npm" , "start" ]
+ENTRYPOINT ["./start.sh" ]

@@ -108,6 +108,8 @@ You may add environment variables to your local `.env` file
 
     npm start
 
+**Note**: The Dockerised version will run the script `start.sh` to start the service, as this will wait for RabbitMQ to start.  This is important when running this on a CI system.
+
 ### Test it
 
 * `npm test` — runs the unit tests (quick)
