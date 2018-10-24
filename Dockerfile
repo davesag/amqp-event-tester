@@ -1,5 +1,5 @@
 FROM node:10-alpine
-MAINTAINER david.sag@industrie.co
+MAINTAINER davesag@gmail.com
 
 WORKDIR /amqp-event-tester
 
