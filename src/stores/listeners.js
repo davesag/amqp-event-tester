@@ -15,9 +15,12 @@ cache.startAll = async function() {
       const data = JSON.parse(message.content.toString())
       logger.debug('heard', key)
       logger.debug('data', data)
-      logger.debug('emit', event.response)
-      logger.debug('with data', event.data)
-      await response(event.response, event.data)
+      if (event.response) {
+        const rData = event.data || {}
+        logger.debug('emit', event.response)
+        logger.debug('with data', rData)
+        await response(event.response, rData)
+      }
       service.ack(message)
     }
     const subscriber = genericSubscriber(event.queue, [key], makeHandler)

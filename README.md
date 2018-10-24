@@ -76,6 +76,10 @@ This tells the event tester to
 * listen for `register` on queue `REGISTRATION` and, when it hears it, respond with key `registered` and data `{ url: 'http://localhost:9090' }`, and
 * listen for `dismiss` on queue `DISMISSAL` and, when it hears it, respond with key `dismissed`, and data `{ success: true }`
 
+#### Events that do not require a response
+
+If your event does not require any sort of response then you can simply leave out the `response` and `data` fields.  This will tell the tester to just pull the message from the queue, so you don't end up with a load of stray messages littering your queue.
+
 ## Development
 
 You may add environment variables to your local `.env` file
