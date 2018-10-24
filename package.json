@@ -4,7 +4,7 @@
   "description": "A simple AMQP event listener that can be configured to listen for your event emitter's events and return a configurable test result. Use this for integration testing of your event emitters.",
   "main": "index.js",
   "engines": {
-    "node": "10.12.0",
+    "node": "11.0.0",
     "npm": "6.4.1"
   },
   "scripts": {
