@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:latest
 MAINTAINER davesag@gmail.com
 
 WORKDIR /amqp-event-tester
