@@ -5,7 +5,8 @@ WORKDIR /amqp-event-tester
 
 COPY package.json package.json
 COPY package-lock.json package-lock.json
-RUN npm install
+
+RUN HUSKY_SKIP_INSTALL=true npm install
 
 COPY src src
 COPY index.js index.js
