@@ -41,7 +41,7 @@
   "homepage": "https://github.com/davesag/amqp-event-tester#readme",
   "dependencies": {
     "amqp-simple-pub-sub": "^1.0.8",
-    "dotenv": "^7.0.0"
+    "dotenv": "^8.0.0"
   },
   "devDependencies": {
     "@stryker-mutator/core": "^1.3.1",
