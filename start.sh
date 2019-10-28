@@ -15,4 +15,4 @@ done
 
 echo "Rabbit MQ is up on ${URL}"
 
-npm start
+node .

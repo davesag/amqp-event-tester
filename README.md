@@ -97,7 +97,7 @@ If your event does not require any sort of response then you can simply leave ou
 
 ### Prerequisites
 
-- [NodeJS](htps://nodejs.org), version 10.16.1 (LTS)+ (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
+- [NodeJS](htps://nodejs.org), version 12.13.0 (LTS)+ (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
 - [Docker](https://www.docker.com) (if on a Mac then use [Docker for Mac](https://docs.docker.com/docker-for-mac/), not the homebrew version)
 
 ### Initialisation
