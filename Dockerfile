@@ -1,6 +1,5 @@
 FROM node:12-slim
 MAINTAINER davesag@gmail.com
-EXPOSE 8282
 
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app
