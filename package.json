@@ -2,6 +2,18 @@
   "name": "@davesag/amqp-event-tester",
   "version": "1.1.0",
   "description": "An AMQP event listener that can be configured to listen for your event emitter's events and return a configurable test result. Use this for integration testing of your event emitters.",
+  "author": "Dave Sag <davesag@gmail.com>",
+  "type": "commonjs",
+  "license": "MIT",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/davesag"
+  },
+  "private": true,
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  },
   "main": "index.js",
   "engines": {
     "node": ">= 12.13.0",
@@ -29,11 +41,9 @@
     "microservices",
     "micro-services"
   ],
-  "author": "Dave Sag <davesag@gmail.com>",
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davesag/amqp-event-tester.git"
+    "url": "https://github.com/davesag/amqp-event-tester.git"
   },
   "bugs": {
     "url": "https://github.com/davesag/amqp-event-tester/issues"
@@ -78,9 +88,14 @@
   },
   "lint-staged": {
     "**/*.{js,json}": [
-      "prettier --single-quote --no-semi --write",
+      "prettier --write",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "nyc": {
     "check-coverage": true,
@@ -102,10 +117,5 @@
     ],
     "all": true,
     "cache": true
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
