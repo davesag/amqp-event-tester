@@ -1,6 +1,6 @@
 {
   "name": "@davesag/amqp-event-tester",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "An AMQP event listener that can be configured to listen for your event emitter's events and return a configurable test result. Use this for integration testing of your event emitters.",
   "author": "Dave Sag <davesag@gmail.com>",
   "type": "commonjs",
