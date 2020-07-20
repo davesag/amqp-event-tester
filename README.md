@@ -85,19 +85,17 @@ If your event does not require any sort of response then you can simply leave ou
 
 ## Development
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/davesag/amqp-event-tester.svg)](https://greenkeeper.io/)
-
-## Branches
+### Branches
 
 <!-- prettier-ignore -->
-| Branch | Tests | Code Coverage | Comments |
-| ------ | ----- | ------------- | ---------|
-| `develop` | [![CircleCI](https://circleci.com/gh/davesag/amqp-event-tester/tree/develop.svg?style=svg)](https://circleci.com/gh/davesag/amqp-event-tester/tree/develop) | [![codecov](https://codecov.io/gh/davesag/amqp-event-tester/branch/develop/graph/badge.svg)](https://codecov.io/gh/davesag/amqp-event-tester) | Latest Staging Release |
-| `master` | [![CircleCI](https://circleci.com/gh/davesag/amqp-event-tester/tree/master.svg?style=svg)](https://circleci.com/gh/davesag/amqp-event-tester/tree/master) | [![codecov](https://codecov.io/gh/davesag/amqp-event-tester/branch/master/graph/badge.svg)](https://codecov.io/gh/davesag/amqp-event-tester) | Latest Production Release |
+| Branch | Tests | Code Coverage | Audit | Comments |
+| ------ | ----- | ------------- | ----- | ---------|
+| `develop` | [![CircleCI](https://circleci.com/gh/davesag/amqp-event-tester/tree/develop.svg?style=svg)](https://circleci.com/gh/davesag/amqp-event-tester/tree/develop) | [![codecov](https://codecov.io/gh/davesag/amqp-event-tester/branch/develop/graph/badge.svg)](https://codecov.io/gh/davesag/amqp-event-tester) | [![Vulnerabilities](https://snyk.io/test/github/davesag/amqp-event-tester/develop/badge.svg)](https://snyk.io/test/github/davesag/amqp-event-tester/develop) | Latest Staging Release |
+| `master` | [![CircleCI](https://circleci.com/gh/davesag/amqp-event-tester/tree/master.svg?style=svg)](https://circleci.com/gh/davesag/amqp-event-tester/tree/master) | [![codecov](https://codecov.io/gh/davesag/amqp-event-tester/branch/master/graph/badge.svg)](https://codecov.io/gh/davesag/amqp-event-tester) | [![Vulnerabilities](https://snyk.io/test/github/davesag/amqp-event-tester/master/badge.svg)](https://snyk.io/test/github/davesag/amqp-event-tester/master) | Latest Production Release |
 
 ### Prerequisites
 
-- [NodeJS](htps://nodejs.org), version 12.13.0 (LTS)+ (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
+- [NodeJS](htps://nodejs.org), version 12.18.2 (LTS)+ (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
 - [Docker](https://www.docker.com) (if on a Mac then use [Docker for Mac](https://docs.docker.com/docker-for-mac/), not the homebrew version)
 
 ### Initialisation

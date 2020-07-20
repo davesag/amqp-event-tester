@@ -6,7 +6,7 @@ const logger = require('src/utils/logger')
 
 const cache = Cache.create()
 
-cache.startAll = async function() {
+cache.startAll = async function () {
   const keys = Object.keys(EVENTS)
   for (const key of keys) {
     const event = EVENTS[key]
@@ -29,12 +29,12 @@ cache.startAll = async function() {
   }
 }
 
-cache.stopAll = async function() {
+cache.stopAll = async function () {
   await Promise.all(Object.values(this.database).map(({ close }) => close()))
   this.reset()
 }
 
-cache.purgeAll = async function() {
+cache.purgeAll = async function () {
   await Promise.all(
     Object.values(this.database).map(({ purgeQueue }) => purgeQueue())
   )
