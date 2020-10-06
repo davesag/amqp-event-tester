@@ -27,9 +27,6 @@ describe('src/events/response', () => {
   after(resetStubs)
 
   it('called publish with the right data', () => {
-    expect(mockService.publish).to.have.been.calledWith(
-      key,
-      sinon.match(expected)
-    )
+    expect(mockService.publish).to.have.been.calledWith(key, sinon.match(expected))
   })
 })

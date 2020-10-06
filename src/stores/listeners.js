@@ -35,9 +35,7 @@ cache.stopAll = async function () {
 }
 
 cache.purgeAll = async function () {
-  await Promise.all(
-    Object.values(this.database).map(({ purgeQueue }) => purgeQueue())
-  )
+  await Promise.all(Object.values(this.database).map(({ purgeQueue }) => purgeQueue()))
 }
 
 module.exports = cache

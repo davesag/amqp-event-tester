@@ -44,10 +44,7 @@ describe('src/stores/listeners', () => {
     })
 
     it('created a subscriber', () => {
-      expect(mockGenericSubscriber).to.have.been.calledWith(
-        fakeConfig.EVENTS[key].queue,
-        [key]
-      )
+      expect(mockGenericSubscriber).to.have.been.calledWith(fakeConfig.EVENTS[key].queue, [key])
     })
 
     it('started the listener', () => {
