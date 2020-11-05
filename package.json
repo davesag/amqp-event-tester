@@ -16,8 +16,8 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">= 12.13.0 < 15.x",
-    "npm": ">= 6.5.0 < 7.x"
+    "node": ">= 12.13.0",
+    "npm": "<7 >=7.0.8"
   },
   "scripts": {
     "eslint-check": "eslint --print-config src/index.js | eslint-config-prettier-check",
@@ -29,7 +29,6 @@
     "test:integration": "NODE_ENV=test NODE_PATH=. mocha ./test/integration/ --require ./test/integrationTestHelper.js --file ./test/integration/testInit.js --recursive --bail",
     "test:unit": "NODE_ENV=test NODE_PATH=. mocha ./test/unit/ --require ./test/unitTestHelper.js --recursive",
     "test:unit:cov": "NODE_ENV=test NODE_PATH=. nyc mocha ./test/unit/ --require ./test/unitTestHelper.js --recursive",
-    "test:mutants": "NODE_PATH=. NODE_ENV=test npx stryker run",
     "snyk-protect": "snyk protect"
   },
   "keywords": [
@@ -55,8 +54,6 @@
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "@stryker-mutator/core": "^4.0.0",
-    "@stryker-mutator/mocha-runner": "^4.0.0",
     "ajv": "^6.12.6",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
