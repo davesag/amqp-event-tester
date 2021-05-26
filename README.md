@@ -91,7 +91,7 @@ If your event does not require any sort of response then you can simply leave ou
 | Branch | Tests | Code Coverage | Audit | Comments |
 | ------ | ----- | ------------- | ----- | ---------|
 | `develop` | [![CircleCI](https://circleci.com/gh/davesag/amqp-event-tester/tree/develop.svg?style=svg)](https://circleci.com/gh/davesag/amqp-event-tester/tree/develop) | [![codecov](https://codecov.io/gh/davesag/amqp-event-tester/branch/develop/graph/badge.svg)](https://codecov.io/gh/davesag/amqp-event-tester) | [![Vulnerabilities](https://snyk.io/test/github/davesag/amqp-event-tester/develop/badge.svg)](https://snyk.io/test/github/davesag/amqp-event-tester/develop) | Latest Staging Release |
-| `master` | [![CircleCI](https://circleci.com/gh/davesag/amqp-event-tester/tree/master.svg?style=svg)](https://circleci.com/gh/davesag/amqp-event-tester/tree/master) | [![codecov](https://codecov.io/gh/davesag/amqp-event-tester/branch/master/graph/badge.svg)](https://codecov.io/gh/davesag/amqp-event-tester) | [![Vulnerabilities](https://snyk.io/test/github/davesag/amqp-event-tester/master/badge.svg)](https://snyk.io/test/github/davesag/amqp-event-tester/master) | Latest Production Release |
+| `main` | [![CircleCI](https://circleci.com/gh/davesag/amqp-event-tester/tree/main.svg?style=svg)](https://circleci.com/gh/davesag/amqp-event-tester/tree/main) | [![codecov](https://codecov.io/gh/davesag/amqp-event-tester/branch/main/graph/badge.svg)](https://codecov.io/gh/davesag/amqp-event-tester) | [![Vulnerabilities](https://snyk.io/test/github/davesag/amqp-event-tester/main/badge.svg)](https://snyk.io/test/github/davesag/amqp-event-tester/main) | Latest Production Release |
 
 ### Prerequisites
 
