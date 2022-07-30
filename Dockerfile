@@ -1,4 +1,4 @@
-FROM node:15-slim
+FROM node:18-buster
 LABEL maintainer="davesag@gmail.com"
 
 RUN mkdir /app && chown -R node:node /app
@@ -9,7 +9,7 @@ COPY --chown=node:node src/ ./src/
 
 ENV NODE_PATH .
 ENV NODE_ENV production
-ENV HUSKY_SKIP_INSTALL true
+ENV HUSKY 0
 
 USER node
 
