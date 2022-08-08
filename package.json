@@ -49,7 +49,7 @@
   },
   "homepage": "https://github.com/davesag/amqp-event-tester#readme",
   "dependencies": {
-    "amqp-simple-pub-sub": "^1.2.1",
+    "amqp-simple-pub-sub": "^1.2.2",
     "dotenv": "^16.0.1"
   },
   "devDependencies": {
