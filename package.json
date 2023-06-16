@@ -50,7 +50,7 @@
   "homepage": "https://github.com/davesag/amqp-event-tester#readme",
   "dependencies": {
     "amqp-simple-pub-sub": "^1.2.2",
-    "dotenv": "^16.1.4"
+    "dotenv": "^16.2.0"
   },
   "devDependencies": {
     "@snyk/protect": "^1.1180.0",
